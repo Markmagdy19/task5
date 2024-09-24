@@ -31,7 +31,8 @@ class _AuthScreenState extends State<AuthScreen> {
   void _submit() async {
     final valid = _formKey.currentState!.validate();
     if (!valid || (!_isLogin && _selectedImage == null)) {
-      return;
+      return;git pull origin main --allow-unrelated-histories
+
     }
     _formKey.currentState!.save();
     try {
